@@ -22,8 +22,8 @@
 
 	&__items {
 		display: grid;
-		column-gap: 25px;
-		grid-template-columns: repeat(3, minmax(392px, 1fr));
+		column-gap: 20px;
+		grid-template-columns: repeat(auto-fit, minmax(392px, 1fr));
 		min-height: 294px;
 	}
 

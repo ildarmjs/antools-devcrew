@@ -9,6 +9,9 @@
 	&__body {
 		padding: 178px 0px 0px 0px;
 		display: flex;
+		@media (max-width: $md3+px) {
+			display: block;
+		}
 	}
 
 	&__content {
@@ -18,6 +21,9 @@
 	&__image {
 		img {
 			transform: translateY(-45px);
+		}
+		@media (max-width: $md3+px) {
+			display: none;
 		}
 	}
 }
@@ -35,6 +41,10 @@
 		span {
 			color: $orangeColor;
 		}
+		@media (max-width: $md3+px) {
+			text-align: center;
+			font-size: 40px;
+		}
 	}
 
 	&__text {
@@ -43,10 +53,16 @@
 		line-height: 30px;
 		color: $grayColor;
 		margin-bottom: 60px;
+		@media (max-width: $md3+px) {
+			text-align: center;
+		}
 	}
 
 	&__search-form {
 		margin-bottom: 110px;
+		@media (max-width: $md3+px) {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__social {
@@ -54,6 +70,9 @@
 }
 .search-form {
 	max-width: 498px;
+	@media (max-width: $md3+px) {
+		max-width: 100%;
+	}
 	&__item {
 		border-radius: 15px;
 		background: #283036;

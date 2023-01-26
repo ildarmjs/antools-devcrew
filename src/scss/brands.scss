@@ -57,6 +57,9 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		@media (max-width: $md3+px) {
+			justify-content: center;
+		}
 	}
 }
 
@@ -64,6 +67,10 @@
 }
 .card-brand {
 	&__image {
+		@media (max-width: $md3+px) {
+			margin-bottom: 15px;
+			margin-left: 15px;
+		}
 	}
 }
 .circle-blur {

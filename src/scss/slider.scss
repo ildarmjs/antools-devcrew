@@ -21,12 +21,19 @@
 		&:hover {
 			color: $orangeColor;
 		}
+		@media (max-width: $md3+px) {
+			display: none;
+		}
 	}
 
 	&__person {
 		display: flex;
 		padding: 0 141px;
 		justify-content: space-between;
+		@media (max-width: $md1+px) {
+			display: block;
+			padding: 0;
+		}
 	}
 
 	&__arrow-right {
@@ -38,6 +45,9 @@
 		}
 		&._active {
 			color: $orangeColor;
+		}
+		@media (max-width: $md3+px) {
+			display: none;
 		}
 	}
 
@@ -101,6 +111,9 @@
 			background: #b345f1;
 			filter: blur(25px);
 		}
+		@media (max-width: $md3+px) {
+			display: none;
+		}
 	}
 	&__small-circle {
 		position: absolute;
@@ -153,6 +166,11 @@
 		position: relative;
 		z-index: 5;
 		flex: 0 1 399px;
+		img {
+			@media (max-width: $md3+px) {
+				width: 300px;
+			}
+		}
 	}
 	&__card {
 		overflow: hidden;
@@ -189,6 +207,11 @@
 			height: 23px;
 			background: #007acc;
 			filter: blur(2.5px);
+		}
+		@media (max-width: $md3+px) {
+			width: 100%;
+			bottom: -30px;
+			left: -15px;
 		}
 	}
 	&__name {

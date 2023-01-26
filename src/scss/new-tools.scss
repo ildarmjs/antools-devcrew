@@ -6,6 +6,9 @@
 	&__body {
 		padding-top: 20px;
 		display: flex;
+		@media (max-width: $md2+px) {
+			display: block;
+		}
 	}
 
 	&__main {
@@ -27,14 +30,17 @@
 		line-height: 27px;
 		color: #ffffff;
 		min-height: 58px;
+		@media (max-width: $md2+px) {
+			margin-bottom: 30px;
+		}
 	}
 	&__elements {
 		flex: 0 1 50%;
 	}
 	&__items {
 		display: grid;
-		column-gap: 24px;
-		grid-template-columns: repeat(2, minmax(288px, 1fr));
+		column-gap: 20px;
+		grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
 		min-height: 284px;
 	}
 	&__item {
